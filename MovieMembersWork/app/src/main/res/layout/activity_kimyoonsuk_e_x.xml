@@ -1,9 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".kimyoonsukEX">
+    tools:context=".kimyoonsukEX"
+    android:orientation="vertical"
+    android:background="@color/black">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:text="마카오 박(김윤석)"
+                android:textStyle="bold"
+                android:textSize="40dp"
+                android:textColor="#006064"
+                android:gravity="center"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/makeborder1"
+                />
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/kimyoonsuk" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="예수가 십자가에 못 박힐때 옆에 있었던게 도둑이야."
+                android:textColor="#FFD000"
+                android:textSize="19.5dp"
+                android:textStyle="bold|italic"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="한국과 중국의 도둑들을 불러모아 마카오의 COD 카지노 호텔에 있는 다이아몬드 '태양의 눈물'을 훔칠 계획을 세운다.군대를 전역한 직후인 24살 때 단돈 80만원을 들고 마카오의 카지노에서 하루만에 88억 원을 땄다는 전설이 전해진다. 이 일로 전 세계 카지노의 블랙리스트에 올랐다. 중국어와 영어, 그리고 한국인이므로 당연히 한국어에 능통하다. 전체적인 계획을 수립하고 지휘하는 역할. 감독의 전작 중 '범죄의 재구성'에서 김선생(백윤식 분)을 떠올리면 된다.
+    다만 4년 전 서울에서 팹시, 뽀빠이와 함께 68kg 30억원 상당의 금괴를 털던 중 혼자 사라진 적이 있다. 이로 인해 팹시와 뽀빠이는 이를 갈고 있는 중. 참고로 태양의 눈물을 웨이홍에게 넘길 계획인데, 그 태양의 눈물을 실질적으로 소유하고 있는 인물이 웨이홍이다. 현재는 웨이홍의 측근인 티파니가 태양의 눈물을 보관하고 있다. 본명은 박도현.
+    과거 줄타기 실력이 대단했던 모양으로, 금고 여는 실력도 줄리와 같은 방식으로 금고를 여는데 더 뛰어난 등, 도둑으로서 대단한 실력을 지녔다."
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="네이버 인물 검색"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/KimYoonSukbtn"/>
+
+
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

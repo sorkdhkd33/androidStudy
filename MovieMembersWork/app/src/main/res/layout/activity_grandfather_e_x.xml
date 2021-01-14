@@ -1,9 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".grandfatherEX">
+    tools:context=".grandfatherEX"
+    android:orientation="vertical"
+    android:background="@color/black">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:text="첸(임달화)"
+                    android:textStyle="bold"
+                    android:textSize="40dp"
+                    android:textColor="#006064"
+                    android:gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/makeborder1"
+                    />
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/grandfather" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="마카오 박은 웨이홍이 어떤 인간인지 몰라.
+"
+                    android:textColor="#FFD000"
+                    android:textSize="19.5dp"
+                    android:textStyle="bold|italic"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="홍콩을 기반으로 활동하는 강도. 지긋한 나이로 보이며 마카오 박이 '첸거[14]라고 부른다. 한국/중국팀 합쳐서 가장 연장자로 보인다. 총기를 사용하며 극중 등장시 보석상 하나를 터는 중이었다. 두뇌 플레이도 부족하지 않은 편. 보석상도 경찰이 출동했지만 별다른 충돌 없이 현금만 들고 사라진다. 마카오 박을 전적으로 신뢰하지는 않지만 팹시나 뽀빠이 같은 원한 수준은 아닌 듯. 도쿄에서 3년을 살아 역시 일본어에 능통해 씹던껌과 일본인 부부로 위장한다"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="네이버 인물 검색"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/grandfatherbtn"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

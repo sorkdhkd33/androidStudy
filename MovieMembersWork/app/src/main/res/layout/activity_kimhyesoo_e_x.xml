@@ -1,9 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
     tools:context=".kimhyesooEX">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:text="펩시(김혜수)"
+                    android:textStyle="bold"
+                    android:textSize="40dp"
+                    android:textColor="#006064"
+                    android:gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/makeborder1"
+                    />
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/kimhyesoo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="너 도둑이 왜 가난한지 아니? 비싼 거 훔쳐서 싸게 팔잖아."
+                    android:textColor="#FFD000"
+                    android:textSize="19.5dp"
+                    android:textStyle="bold|italic"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="금고털이에 능한 도둑. 4년 전 서울의 모처에서 68kg, 30억원 상당의 금괴를 털던 중 실수로 CCTV에 모습이 찍혀, 자수 형식으로 잡혔다가 모범수 가석방으로 출소했다. 마카오 박에게 연심을 품고 있는 것 같으나 4년 전 사건에서 마카오 박이 자신과 뽀빠이를 배신하고 금괴를 먹튀했다고 생각, 원한을 품고 있다. 사실 금괴보다는 자신의 감정이 배신 당했다는 점이 더 크다. 여담으로 예니콜과의 감정 대립이 은근히 재미있다. 팀내 미녀 대결이기도 하고. 팹시라는 이름은 제작진이 김혜수를 부르는 호칭이 혜수씨 → 헤스씨 → 헵씨 → 팹시로 변하는 과정에서 탄생했다고 한다. 영화에서는 예니콜이 왜 팹시냐고 묻자, 팹시가 톡톡 튀어서 라고 답한다."
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="네이버 인물 검색"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/KimHyeSoobtn"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

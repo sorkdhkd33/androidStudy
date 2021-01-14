@@ -1,9 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".foreignerEX">
+    tools:context=".foreignerEX"
+    android:orientation="vertical"
+    android:background="@color/black">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:text="줄리(이심결)"
+                    android:textStyle="bold"
+                    android:textSize="40dp"
+                    android:textColor="#006064"
+                    android:gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/makeborder1"
+                    />
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/foreigner" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I trust my fingers."
+                    android:textColor="#FFD000"
+                    android:textSize="19.5dp"
+                    android:textStyle="bold|italic"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="첸의 팀에 새로이 합류한 금고털이 전문가. 아버지가 유명한 금고털이였으며 첸과 구면으로 보인다. 각종 기구를 사용하는 팹시에 비해 순수하게 손과 귀로만 금고에 도전하는 클래식한 타입. 아마도 아버지의 영향으로 보인다. 새로이 합류했다는 점과 초반 마카오 박을 도청하는 점이 수상하다. 사실 전반적으로 중국팀과 한국팀, 그리고 마카오 박은 각각 상대를 전적으로 신뢰하지 않는다."
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="네이버 인물 검색"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/Foreignerbtn"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

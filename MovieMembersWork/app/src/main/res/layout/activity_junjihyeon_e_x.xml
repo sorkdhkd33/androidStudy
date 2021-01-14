@@ -1,9 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".junjihyeonEX">
+    tools:context=".junjihyeonEX"
+    android:background="@color/black"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:text="애니콜(전지현)"
+                android:textStyle="bold"
+                android:textSize="40dp"
+                android:textColor="#006064"
+                android:gravity="center"
+                android:layout_marginLeft="43dp"
+                android:background="@drawable/makeborder1"
+                />
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/junjihyeon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="으~~마으마한 썅년같애."
+                android:textColor="#FFD000"
+                android:textSize="19.5dp"
+                android:textStyle="bold|italic"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="줄타기 전문. 동시에 미인계를 이용한 잠입과 정보수집도 겸한다. 한국팀에서는 젊은 축에 속하며(잠파노보다는 연상으로 보인다) 이 때문에 과거의 일에 얽히지 않은 사람 중 하나다. 돈에 대한 집착이 강하며 입이 상당히 거칠다. 전지현의 연기 중 가장 욕을 많이 하는 역할일지도. 발등에 Happy ending is mine(해피 엔딩은 나의 것) 이라는 문신이 있다. 참고로 전과기록이 있는데 의외로 절도가 아니라 '간통죄'였다(…). 본명은 예복희. 예니콜이라는 이름은 범죄가 부르면 예~하고 달려간다는 뜻에서 지어졌다.[8][9] 또한 본명 '예복희'에서 유래한 것도 있다. 으~마으마한 썅년같은데. 마카오 박의 배신으로 카지노 금고털이가 실패한 뒤 급히 달아나던 중 경찰검문에 걸렸고 중국어를 할 줄 몰라 난감해 하던 찰나, 때 맞춰 나타나준 잠파노 덕분에 안 잡히고 무사히 빠져나왔다."
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="네이버 인물 검색"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/Junjihyeonbtn"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

@@ -1,9 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".gumEX">
+    tools:context=".gumEX"
+    android:orientation="vertical"
+    android:background="@color/black">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:text="씹던껌(김해숙)"
+                    android:textStyle="bold"
+                    android:textSize="40dp"
+                    android:textColor="#006064"
+                    android:gravity="center"
+                    android:layout_marginLeft="43dp"
+                    android:background="@drawable/makeborder1"
+                    />
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/gum" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="당신 잘못이 아니야. 내가 꿈을 잘못 샀어."
+                    android:textColor="#FFD000"
+                    android:textSize="19.5dp"
+                    android:textStyle="bold|italic"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="연기에 능한 도둑. 본명은 장은옥. 작업에 있어서는 시선을 끌거나 이를 통해 시간을 확보하는 역할. 과거에는 명성이 대단했지만 복잡한 가정사로 인해 현재는 반 알콜중독 상태. 이혼을 3번이나 했고 딸이 있다. 참고로 딸은 다른 남자에게 눈이 멀어 어머니의 돈을 퍼다 쓰는 중. 최초 마카오 박의 제안에 씹던껌은 들어있지 않았지만 그냥(…) 끼어들어 한 자리 하게 된다. 오사카에서 3년 살았던 덕에 일본어에 능해 중국팀의 첸과 함께 일본인 부부로 위장, 작전에 참여한다. 씹던껌이라는 이름은 씹고 있는 껌을 범죄에 이용한다는 것에서 붙였다."
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="네이버 인물 검색"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/gumbtn"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
